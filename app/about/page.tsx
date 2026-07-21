@@ -11,12 +11,12 @@ export default function AboutPage() {
   return (
     <main id="main-content">
       <PageHero
-        eyebrow="OUR LITTLE ESCAPE"
-        eyebrowAr="هروبنا الصغير"
-        title="Born for the good days."
-        titleAr="اتعملنا للأيام الحلوة."
-        copy="A neighborhood drink stop inspired by long summers, spontaneous plans, and the people who make both better."
-        copyAr="محطة مشروبات في قلب الحي، مستوحاة من صيف طويل، خطط عفوية، والناس اللي بيخلوا كل حاجة أحلى."
+        eyebrow="OUR STORY"
+        eyebrowAr="قصتنا"
+        title="We just wanted a nice place to hang out."
+        titleAr="كنا عايزين مكان حلو نخرج فيه."
+        copy="Turns out a lot of people wanted the same thing. So we built it."
+        copyAr="طلع ناس كتير عايزة نفس الحاجة. فبنينا المكان ده."
       >
         <div className="about-hero-art" aria-hidden="true">
           <div className="paper-sun"><Sun weight="fill" /></div>
@@ -32,20 +32,20 @@ export default function AboutPage() {
           <p>LET&apos;S ENJOY IT<br />AND HAVE SOME FUN!</p>
         </Reveal>
         <Reveal className="story-copy" delay={120}>
-          <span className="eyebrow">HOW IT STARTED</span>
-          <h2>{isArabic ? "بدأت بفكرة بسيطة: نعمل مكان يحسسك إنك في إجازة." : "It started with one simple idea: make everyday feel a bit more like holiday."}</h2>
-          <p>{isArabic ? "وسط أيام سريعة وروتين طويل، حبينا نعمل مكان مختلف. مكان ألوانه مبهجة، نكهاته صريحة، والوقت فيه يمشي أبطأ شوية." : "Between fast days and familiar routines, we wanted to make a place that felt different. Brighter colors, clearer flavors, and a pace that lets you stay a little longer."}</p>
-          <p>{isArabic ? "درينك رن هو توقفك الصغير بين هنا وهناك. معمول للمشاوير العفوية، الصحاب، والمشروبات اللي تستاهل صورة قبل أول رشفة." : "Drink Run is your small stop between here and there. Built for spontaneous detours, familiar faces, and drinks worth photographing before the first sip."}</p>
+          <span className="eyebrow">WHERE IT ALL STARTED</span>
+          <h2>{isArabic ? "كل اللي كنا عايزينه مكان بسيط، بألوان حلوة، وطعم يفرح." : "All we wanted was somewhere simple, with nice colors and stuff that actually tastes good."}</h2>
+          <p>{isArabic ? "الموضوع بدأ من فكرة صغيرة: ليه كل حاجة محتاجة تكون سريعة ومعقدة؟ حبينا نعمل العكس. مكان هادي، مشروبات بتتعمل بإيدينا، ووقت بيمشي على مهله." : "We were tired of everything being so fast and complicated. So we did the opposite. Quiet music, drinks made by hand, nobody rushing you out the door."}</p>
+          <p>{isArabic ? "ودرينك رن بقى المحطة اللي بنقف فيها بين المشوار والتاني. مكان للي عايز ياخد نفسه، يتكلم براحته، ويشرب حاجة تستاهل." : "Drink Run became that little stop between things. A spot for anyone who wants to breathe, chat, and drink something worth the detour."}</p>
           <ArrowDownRight size={46} aria-hidden="true" />
         </Reveal>
       </section>
 
       <section className="values-section">
-        <Reveal className="values-heading"><span className="eyebrow">WHAT MATTERS HERE</span><h2>{isArabic ? "حاجات نؤمن بيها." : "Things we believe in."}</h2></Reveal>
+        <Reveal className="values-heading"><span className="eyebrow">WHAT WE CARE ABOUT</span><h2>{isArabic ? "حاجات مهمة عندنا." : "Stuff that matters here."}</h2></Reveal>
         <div className="value-grid">
-          <Reveal className="value-card value-card--coral"><Sun size={34} weight="fill" /><span>01</span><h3>{isArabic ? "البهجة في التفاصيل" : "Joy in the details"}</h3><p>{isArabic ? "من أول لون الكوب لآخر مكعب تلج، كل حاجة معمولة علشان تفرّحك." : "From cup color to the last ice cube, every detail is there to lift the mood."}</p></Reveal>
-          <Reveal className="value-card value-card--mint" delay={80}><Heart size={34} weight="fill" /><span>02</span><h3>{isArabic ? "مكونات حقيقية" : "The real stuff"}</h3><p>{isArabic ? "فاكهة حقيقية، أعشاب طازة، وخلطات بنحضرها بإيدينا كل يوم." : "Real fruit, fresh herbs, and house mixes prepared by our crew every day."}</p></Reveal>
-          <Reveal className="value-card value-card--plum" delay={160}><Smiley size={34} weight="fill" /><span>03</span><h3>{isArabic ? "الكل مرحب بيه" : "Room for everyone"}</h3><p>{isArabic ? "مقعد ليك، مكان لصحابك، وابتسامة جاهزة أول ما تدخل." : "A seat for you, room for your friends, and a smile ready when you arrive."}</p></Reveal>
+          <Reveal className="value-card value-card--coral"><Sun size={34} weight="fill" /><span>01</span><h3>{isArabic ? "الفرحة في التفاصيل" : " Joy in the details"}</h3><p>{isArabic ? "لون الكوب، شكل التلج، طريقة التقديم. كل حاجة صغيرة بنهتم بيها علشان تفرق معاك." : "The cup color. The ice shape. How we hand it to you. The little things add up."}</p></Reveal>
+          <Reveal className="value-card value-card--mint" delay={80}><Heart size={34} weight="fill" /><span>02</span><h3>{isArabic ? "المكونات الحقيقية" : "Real ingredients"}</h3><p>{isArabic ? "فاكهة بنقطعها إحنا. أعشاب طازة. كل حاجة بتتعمل الصبح وبتخلص بنهاية اليوم." : "We cut our own fruit. Fresh herbs. Everything gets prepped that morning, gone by closing."}</p></Reveal>
+          <Reveal className="value-card value-card--plum" delay={160}><Smiley size={34} weight="fill" /><span>03</span><h3>{isArabic ? "مكان للكل" : "Room for everyone"}</h3><p>{isArabic ? "تيجي لوحدك؟ أهلاً. جاي مع صحابك؟ اتفضلوا. محتاج تشحن الموبايل وتقعد ساعة؟ عادي." : "Come alone? Cool. Brought six friends? Pull up chairs. Need to charge your phone and sit for an hour? Go ahead."}</p></Reveal>
         </div>
       </section>
 
@@ -53,8 +53,8 @@ export default function AboutPage() {
         <div className="quote-sun" aria-hidden="true" />
         <Reveal>
           <span>“</span>
-          <blockquote>{isArabic ? "إحنا مش بنبيع مشروبات وبس. إحنا بنعمل سبب صغير يخلي يومك أحلى." : "We’re not just serving drinks. We’re making one small reason for your day to feel better."}</blockquote>
-          <cite>— THE DRINK RUN CREW</cite>
+          <blockquote>{isArabic ? "مش بنبيع مشروبات. إحنا بنقدم سبب صغير علشان يومك يبقى أحسن." : "We don't sell drinks. We sell a tiny excuse to feel better about your day."}</blockquote>
+          <cite>— US, THE DRINK RUN CREW</cite>
         </Reveal>
       </section>
     </main>

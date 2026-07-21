@@ -12,11 +12,11 @@ export default function BranchesPage() {
     <main id="main-content">
       <PageHero
         eyebrow="COME SAY HI"
-        eyebrowAr="تعالى سلم علينا"
-        title="Your spot is waiting."
-        titleAr="مكانك مستنيك."
-        copy="Three bright corners, one easygoing mood. Find the Drink Run closest to your day."
-        copyAr="ثلاث زوايا مبهجة، ومزاج واحد خفيف. اختار أقرب درينك رن ليومك."
+        eyebrowAr="تعالى سلم"
+        title="We've got a seat for you."
+        titleAr="لك مكان مستني."
+        copy="Three spots around town. All the same good stuff, just different views."
+        copyAr="تلت فروع حوالين البلد. نفس المشروبات الحلوة، كل فرع بشخصيته."
       >
         <div className="branch-hero-map" aria-hidden="true">
           <span className="map-line map-line--one" />
@@ -39,7 +39,7 @@ export default function BranchesPage() {
               <div className="branch-details">
                 <p><Clock size={19} /> {isArabic ? branch.hoursAr : branch.hours}</p>
                 <a href={`tel:${branch.phone.replace(/\s/g, "")}`}><Phone size={19} /> {branch.phone}</a>
-                <a className="direction-link" href="https://maps.google.com" target="_blank" rel="noreferrer">{isArabic ? "الاتجاهات" : "Get directions"} <ArrowUpRight size={18} /></a>
+                <a className="direction-link" href="https://maps.google.com" target="_blank" rel="noreferrer">{isArabic ? "الطريق من هنا" : "Get directions"} <ArrowUpRight size={18} /></a>
               </div>
             </Reveal>
           ))}
@@ -60,9 +60,9 @@ export default function BranchesPage() {
           ))}
         </div>
         <Reveal className="map-copy">
-          <span className="eyebrow">PICK A PLACE</span>
-          <h2>{isArabic ? "في أي مكان، نفس المزاج الحلو." : "Different place, same sunny mood."}</h2>
-          <p>{isArabic ? "كل فرع له شخصيته، بس هتلاقي نفس المشروبات الطازة والاستقبال الدافي في كل مكان." : "Every branch has its own rhythm, but the fresh pours and warm welcome follow wherever we go."}</p>
+          <span className="eyebrow">YOUR LOCAL</span>
+          <h2>{isArabic ? "نفس المزاج الحلو، في كل مكان." : "Same vibe, different neighborhood."}</h2>
+          <p>{isArabic ? "كل فرع مختلف شوية — في الديكور، في الطلة — بس المشروبات الطازة والناس اللي بترحب بيك هتلاقيهم في أي فرع تروحه." : "Each branch has its own look and feel, but the fresh drinks and the people who actually care — that stuff travels."}</p>
         </Reveal>
       </section>
     </main>

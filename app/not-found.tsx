@@ -14,8 +14,8 @@ export default function NotFound() {
       background: "var(--cream)",
     }}>
       <span style={{ fontSize: "80px", lineHeight: "1" }}>404</span>
-      <h1 style={{ fontFamily: "var(--font-display)", fontSize: "3rem", margin: 0 }}>Page not found</h1>
-      <p style={{ color: "var(--ink-soft)", maxWidth: "400px" }}>This page went off-menu. Let us pour you something nice back home.</p>
+      <h1 style={{ fontFamily: "var(--font-display)", fontSize: "3rem", margin: 0 }}>Wrong turn</h1>
+      <p style={{ color: "var(--ink-soft)", maxWidth: "400px" }}>This page doesn't exist. Probably our fault. Let's get you back somewhere nice.</p>
       <Link href="/" style={{
         padding: "12px 24px",
         background: "var(--coral)",

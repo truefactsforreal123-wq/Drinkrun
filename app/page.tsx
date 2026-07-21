@@ -8,9 +8,9 @@ import { LogoMark } from "@/components/logo-mark";
 import { Reveal } from "@/components/reveal";
 
 const principles = [
-  { number: "01", en: "Made fresh", ar: "طازج دائماً", copy: "Real fruit, bright herbs, no shortcuts.", copyAr: "فاكهة حقيقية، أعشاب منعشة، بدون اختصارات." },
-  { number: "02", en: "Good mood", ar: "مزاج حلو", copy: "A tiny holiday hiding in your everyday.", copyAr: "إجازة صغيرة مستخبية في يومك العادي." },
-  { number: "03", en: "For everyone", ar: "للكل", copy: "Come solo, bring the crew, stay a while.", copyAr: "تعالى لوحدك أو مع صحابك، وخليك براحتك." },
+  { number: "01", en: "Made fresh", ar: "طازج دايمًا", copy: "We cut the fruit. We squeeze the juice. That's it.", copyAr: "إحنا بنقطع الفاكهة. إحنا بنعصر العصير. خلاص." },
+  { number: "02", en: "Good mood only", ar: "مزاج حلو وبس", copy: "You walk in stressed, you leave smiling. House rule.", copyAr: "تدخل متضايق، تخرج مبسوط. قانون البيت." },
+  { number: "03", en: "Stay a while", ar: "اقعد على راحتك", copy: "Nobody rushes you here. Bring your laptop, bring your gossip, whatever.", copyAr: "محدش بيستعجلك هنا. هات اللابتوب، هات الحكاوي، براحتك." },
 ];
 
 export default function HomePage() {
@@ -26,7 +26,7 @@ export default function HomePage() {
           <span className="hero-doodle hero-doodle--two">~</span>
         </div>
         <div className="hero-copy">
-          <span className="eyebrow">FRESHLY MIXED · DAILY</span>
+          <span className="eyebrow">FRESH EVERY DAY</span>
           <h1>
             {isArabic ? (
               <>أيام أحلى.<br /><em>مشروبات أجرأ.</em></>
@@ -34,13 +34,13 @@ export default function HomePage() {
               <>Easy days.<br /><em>Bold drinks.</em></>
             )}
           </h1>
-          <p>{isArabic ? "مكانك للهروب من الزحمة، رشفة منعشة ومزاج أخف." : "Your colorful little escape from the rush, one fresh pour and one good mood at a time."}</p>
+          <p>{isArabic ? "المحطة اللي بتفصل بين زحمة اليوم وراحة البال. مشروب حلو، مكان يهون، وناس رايقة." : "The stop between your busy day and your actual life. Good drinks, a spot that doesn't rush you, zero pretension."}</p>
           <div className="hero-actions">
             <Link className="button button--dark" href="/menu">
-              {isArabic ? "شوف القائمة" : "See what’s pouring"} <ArrowUpRight size={19} weight="bold" />
+              {isArabic ? "شوف القائمة" : "Browse the menu"} <ArrowUpRight size={19} weight="bold" />
             </Link>
             <Link className="text-link" href="/branches">
-              <MapPin size={19} /> {isArabic ? "أقرب فرع" : "Find your spot"}
+              <MapPin size={19} /> {isArabic ? "الفرع الأقرب ليك" : "Find your nearest"}
             </Link>
           </div>
         </div>
@@ -72,27 +72,27 @@ export default function HomePage() {
       <section className="favorites-section" id="favorites">
         <Reveal className="section-intro split-intro">
           <div>
-            <span className="eyebrow">CURRENT CRUSHES</span>
-            <h2>{isArabic ? <>ألوان تحلي<br /><em>يومك.</em></> : <>Color your<br /><em>day.</em></>}</h2>
+            <span className="eyebrow">PEOPLE ORDER THESE A LOT</span>
+            <h2>{isArabic ? <>اللي الناس<br /><em>بتحبه.</em></> : <>What people<br /><em>actually order.</em></>}</h2>
           </div>
-          <p>{isArabic ? "خلطات مميزة مصنوعة من مكونات حقيقية، بنكهات جريئة وفرحة واضحة." : "House-made favorites built with real ingredients, loud flavor, and just the right amount of joy."}</p>
+          <p>{isArabic ? "الحاجات اللي بنعملها كل يوم تقريبًا. مكونات بسيطة، طعم واضح، والناس بترجع عشانها." : "The stuff we make the most. Nothing fancy on paper — just drinks that taste right and keep people coming back."}</p>
         </Reveal>
 
         <div className="favorite-grid">
           <Reveal className="favorite-card favorite-card--coral" delay={40}>
             <div className="favorite-number">01 / 03</div>
             <DrinkArt kind="berry" label="Berry Sunset hibiscus refresher" />
-            <div className="favorite-copy"><span>HIBISCUS · BERRY · LIME</span><h3>{isArabic ? "غروب التوت" : "Berry Sunset"}</h3><Link href="/menu">{isArabic ? "اعرف أكثر" : "Meet the favorite"} <ArrowUpRight /></Link></div>
+            <div className="favorite-copy"><span>HIBISCUS · BERRY · LIME</span><h3>{isArabic ? "غروب التوت" : "Berry Sunset"}</h3><Link href="/menu">{isArabic ? "شوف التفاصيل" : "Take a look"} <ArrowUpRight /></Link></div>
           </Reveal>
           <Reveal className="favorite-card favorite-card--mint" delay={120}>
             <div className="favorite-number">02 / 03</div>
             <DrinkArt kind="mojito" label="Garden Fizz cucumber and mint refresher" />
-            <div className="favorite-copy"><span>CUCUMBER · MINT · APPLE</span><h3>{isArabic ? "فوار الحديقة" : "Garden Fizz"}</h3><Link href="/menu">{isArabic ? "اعرف أكثر" : "Taste the green"} <ArrowUpRight /></Link></div>
+            <div className="favorite-copy"><span>CUCUMBER · MINT · APPLE</span><h3>{isArabic ? "فوار الحديقة" : "Garden Fizz"}</h3><Link href="/menu">{isArabic ? "شوف التفاصيل" : "Take a look"} <ArrowUpRight /></Link></div>
           </Reveal>
           <Reveal className="favorite-card favorite-card--cream" delay={200}>
             <div className="favorite-number">03 / 03</div>
             <DrinkArt kind="coffee" label="Cloud cold brew coffee" />
-            <div className="favorite-copy"><span>COLD BREW · VANILLA · SEA SALT</span><h3>{isArabic ? "كولد برو كلاود" : "Cloud Cold Brew"}</h3><Link href="/menu">{isArabic ? "اعرف أكثر" : "Catch the cloud"} <ArrowUpRight /></Link></div>
+            <div className="favorite-copy"><span>COLD BREW · VANILLA · SEA SALT</span><h3>{isArabic ? "كولد برو كلاود" : "Cloud Cold Brew"}</h3><Link href="/menu">{isArabic ? "شوف التفاصيل" : "Take a look"} <ArrowUpRight /></Link></div>
           </Reveal>
         </div>
       </section>
@@ -106,16 +106,16 @@ export default function HomePage() {
         </div>
         <Reveal className="manifesto-copy">
           <Sparkle size={28} weight="fill" />
-          <span className="eyebrow">THE DRINK RUN WAY</span>
-          <h2>{isArabic ? "الحياة أقصر من مشروب عادي." : "Life is too short for boring drinks."}</h2>
-          <p>{isArabic ? "إحنا مؤمنين إن كل يوم يستاهل لحظة خفيفة. عشان كده بنخلط كل كوب بعناية، ونقدمه بابتسامة كبيرة." : "We believe every day deserves a bright little interruption. So we mix every cup with care, serve it with a big smile, and leave the boring stuff elsewhere."}</p>
-          <Link className="button button--light" href="/about">{isArabic ? "اقرأ قصتنا" : "Read our story"} <ArrowUpRight size={19} /></Link>
+          <span className="eyebrow">OUR WHOLE THING</span>
+          <h2>{isArabic ? "الحياة أقصر من مشروب ممل." : "Life's too short for boring drinks."}</h2>
+          <p>{isArabic ? "كل يوم بيعدي محتاج وقفة حلوة. عشان كده بنخلط كل كوب بإيدينا، بنقدمه بضحكة، وبنخلي الباقي بره الباب." : "Every day deserves at least one genuinely nice moment. So we make every cup by hand, serve it with a smile, and leave the stress at the door."}</p>
+          <Link className="button button--light" href="/about">{isArabic ? "اقرأ القصة" : "Read our story"} <ArrowUpRight size={19} /></Link>
         </Reveal>
       </section>
 
       <section className="principles-section">
         <Reveal className="principles-heading">
-          <span className="eyebrow">WHY WE POUR</span>
+          <span className="eyebrow">HOW WE DO THINGS</span>
           <h2>{isArabic ? "بسيطة. طازة. سعيدة." : "Simple. Fresh. Happy."}</h2>
         </Reveal>
         <div className="principles-list">
@@ -132,8 +132,8 @@ export default function HomePage() {
       <section className="home-location-callout">
         <Reveal>
           <span className="eyebrow">YOUR NEXT DRINK RUN</span>
-          <h2>{isArabic ? "قريب منك، وبعيد عن الروتين." : "Close by, far from ordinary."}</h2>
-          <Link className="button button--dark" href="/branches">{isArabic ? "شوف الفروع" : "Explore our spots"} <ArrowUpRight size={19} /></Link>
+          <h2>{isArabic ? "قريب منك، بعيد عن الروتين." : "Close by, far from boring."}</h2>
+          <Link className="button button--dark" href="/branches">{isArabic ? "شوف الفروع" : "Find a branch"} <ArrowUpRight size={19} /></Link>
         </Reveal>
         <div className="location-scribble" aria-hidden="true">meet<br />me<br />here ↘</div>
       </section>

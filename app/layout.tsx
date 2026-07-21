@@ -26,7 +26,7 @@ const arabic = IBM_Plex_Sans_Arabic({
 
 export const metadata: Metadata = {
   title: { default: "Drink Run", template: "%s | Drink Run" },
-  description: "Bright drinks, easy days, and a little escape in every glass.",
+  description: "Good drinks, good people — Drink Run is the bright little spot between your busy day and your actual life.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
