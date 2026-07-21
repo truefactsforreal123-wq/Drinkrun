@@ -22,7 +22,7 @@ export default function BranchesPage() {
           <span className="map-line map-line--one" />
           <span className="map-line map-line--two" />
           <MapPin weight="fill" />
-          <em>you are<br />almost here!</em>
+          <em>{isArabic ? "انت قربت" : "you are"}<br />{isArabic ? "أوي!" : "almost here!"}</em>
         </div>
       </PageHero>
 
@@ -47,7 +47,7 @@ export default function BranchesPage() {
       </section>
 
       <section className="map-section">
-        <div className="map-canvas" aria-label="Stylized map showing Drink Run branch locations">
+        <div className="map-canvas" aria-label={isArabic ? "خريطة توضح مواقع فروع درينك رن" : "Stylized map showing Drink Run branch locations"}>
           <div className="road road-a" aria-hidden="true" />
           <div className="road road-b" aria-hidden="true" />
           <div className="road road-c" aria-hidden="true" />
@@ -60,7 +60,7 @@ export default function BranchesPage() {
           ))}
         </div>
         <Reveal className="map-copy">
-          <span className="eyebrow">YOUR LOCAL</span>
+          <span className="eyebrow">{isArabic ? "فرعك المحلي" : "YOUR LOCAL"}</span>
           <h2>{isArabic ? "نفس المزاج الحلو في كل حتة." : "Same vibe, different neighborhood."}</h2>
           <p>{isArabic ? "كل فرع مختلف شوية — في الديكور، في الطلة — لكن المشروبات الطازة والناس اللي بترحب بيك هتلاقيهم في أي مكان تروحه." : "Each branch has its own look and feel, but the fresh drinks and the people who actually care — that stuff travels."}</p>
         </Reveal>

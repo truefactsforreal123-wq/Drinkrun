@@ -7,14 +7,14 @@ export const menuCategories = [
 ];
 
 export const menuItems = [
-  { id: 1, category: "signatures", kind: "berry" as const, name: "Berry Sunset", nameAr: "غروب التوت", desc: "Hibiscus, strawberry, lime, topped with soda", descAr: "كركديه، فراولة، ليمون، وصودا على الوش", price: 125, tag: "أكتر حاجة بتتطلب" },
-  { id: 2, category: "signatures", kind: "mango" as const, name: "Golden Hour", nameAr: "الساعة الذهبية", desc: "Mango, passionfruit, coconut, splash of citrus", descAr: "مانجو، باشن فروت، جوز هند، وشوية حمضيات", price: 135, tag: "طعم الصيف" },
-  { id: 3, category: "refreshers", kind: "mojito" as const, name: "Garden Fizz", nameAr: "فوار الحديقة", desc: "Cucumber, mint, green apple, soda. That's it.", descAr: "خيار، نعناع، تفاح أخضر، وصودا. بس كده.", price: 110, tag: "الناس بتحبه أوي" },
-  { id: 4, category: "refreshers", kind: "citrus" as const, name: "Pink Lemonade", nameAr: "ليمونادة وردية", desc: "Pink grapefruit, lemon, orange blossom. Tart and sweet.", descAr: "جريب فروت وردي، ليمون، وماء زهر. حامض وحلو.", price: 105, tag: "مش الليمونادة العادية" },
-  { id: 5, category: "coffee", kind: "coffee" as const, name: "Cloud Cold Brew", nameAr: "كولد برو كلاود", desc: "12-hour cold brew, vanilla cream, pinch of sea salt", descAr: "قهوة باردة ١٢ ساعة، كريمة فانيليا، رشة ملح بحري", price: 120, tag: "ناعم زي ما تتخيل" },
-  { id: 6, category: "coffee", kind: "matcha" as const, name: "Matcha Coast", nameAr: "ماتشا الساحل", desc: "Proper matcha, oat milk, just a little honey", descAr: "ماتشا بجد، حليب شوفان، شوية عسل صغيرين", price: 130, tag: "هدوء في كوباية" },
-  { id: 7, category: "bites", kind: "mango" as const, name: "Sunny Toast", nameAr: "توست صني", desc: "Toasted sourdough, whipped labneh, peach, honey, thyme", descAr: "توست بلدي محمص، لبنة، خوخ، عسل، وزعتر", price: 145, tag: "حلو وحادق مع بعض" },
-  { id: 8, category: "bites", kind: "berry" as const, name: "Berry Bowl", nameAr: "بول التوت", desc: "Thick yogurt, whatever berries are good today, granola, dates", descAr: "زبادي تقيل، توت الموسم، جرانولا، وتمر", price: 155, tag: "ده بيملي البطن" },
+  { id: 1, category: "signatures", kind: "berry" as const, name: "Berry Sunset", nameAr: "غروب التوت", desc: "Hibiscus, strawberry, lime, topped with soda", descAr: "كركديه، فراولة، ليمون، وصودا على الوش", price: 125, tagEn: "Most ordered", tagAr: "أكتر حاجة بتتطلب" },
+  { id: 2, category: "signatures", kind: "mango" as const, name: "Golden Hour", nameAr: "الساعة الذهبية", desc: "Mango, passionfruit, coconut, splash of citrus", descAr: "مانجو، باشن فروت، جوز هند، وشوية حمضيات", price: 135, tagEn: "Tastes like summer", tagAr: "طعم الصيف" },
+  { id: 3, category: "refreshers", kind: "mojito" as const, name: "Garden Fizz", nameAr: "فوار الحديقة", desc: "Cucumber, mint, green apple, soda. That's it.", descAr: "خيار، نعناع، تفاح أخضر، وصودا. بس كده.", price: 110, tagEn: "People love this one", tagAr: "الناس بتحبه أوي" },
+  { id: 4, category: "refreshers", kind: "citrus" as const, name: "Pink Lemonade", nameAr: "ليمونادة وردية", desc: "Pink grapefruit, lemon, orange blossom. Tart and sweet.", descAr: "جريب فروت وردي، ليمون، وماء زهر. حامض وحلو.", price: 105, tagEn: "Not your average lemonade", tagAr: "مش الليمونادة العادية" },
+  { id: 5, category: "coffee", kind: "coffee" as const, name: "Cloud Cold Brew", nameAr: "كولد برو كلاود", desc: "12-hour cold brew, vanilla cream, pinch of sea salt", descAr: "قهوة باردة ١٢ ساعة، كريمة فانيليا، رشة ملح بحري", price: 120, tagEn: "Smooth as it sounds", tagAr: "ناعم زي ما تتخيل" },
+  { id: 6, category: "coffee", kind: "matcha" as const, name: "Matcha Coast", nameAr: "ماتشا الساحل", desc: "Proper matcha, oat milk, just a little honey", descAr: "ماتشا بجد، حليب شوفان، شوية عسل صغيرين", price: 130, tagEn: "Calm in a cup", tagAr: "هدوء في كوباية" },
+  { id: 7, category: "bites", kind: "mango" as const, name: "Sunny Toast", nameAr: "توست صني", desc: "Toasted sourdough, whipped labneh, peach, honey, thyme", descAr: "توست بلدي محمص، لبنة، خوخ، عسل، وزعتر", price: 145, tagEn: "Sweet meets savory", tagAr: "حلو وحادق مع بعض" },
+  { id: 8, category: "bites", kind: "berry" as const, name: "Berry Bowl", nameAr: "بول التوت", desc: "Thick yogurt, whatever berries are good today, granola, dates", descAr: "زبادي تقيل، توت الموسم، جرانولا، وتمر", price: 155, tagEn: "Actually filling", tagAr: "ده بيملي البطن" },
 ];
 
 export const branches = [

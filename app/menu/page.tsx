@@ -26,12 +26,12 @@ export default function MenuPage() {
       >
         <div className="menu-hero-art" aria-hidden="true">
           <DrinkArt kind="mango" />
-          <span>sip<br />sip<br />hooray!</span>
+          <span>{isArabic ? "شرب شرب يا" : "sip"}<br />{isArabic ? "بطل" : "sip"}<br />hooray!</span>
         </div>
       </PageHero>
 
       <section className="menu-section">
-        <div className="filter-row" role="group" aria-label="Filter menu by category">
+        <div className="filter-row" role="group" aria-label={isArabic ? "تصفية القائمة حسب الفئة" : "Filter menu by category"}>
           {menuCategories.map((item) => (
             <button
               type="button"
@@ -49,8 +49,8 @@ export default function MenuPage() {
           {items.map((item, index) => (
             <Reveal className={`menu-card menu-card--${item.kind}`} key={item.id} delay={(index % 3) * 60}>
               <div className="menu-art-wrap">
-                <span className="menu-tag">{item.tag}</span>
-                <DrinkArt kind={item.kind} label={`${item.name}, ${item.desc}`} />
+                <span className="menu-tag">{isArabic ? item.tagAr : item.tagEn}</span>
+                <DrinkArt kind={item.kind} label={isArabic ? `${item.nameAr}، ${item.descAr}` : `${item.name}, ${item.desc}`} />
               </div>
               <div className="menu-card-copy">
                 <div>
@@ -58,7 +58,7 @@ export default function MenuPage() {
                   <h2>{isArabic ? item.nameAr : item.name}</h2>
                   <p>{isArabic ? item.descAr : item.desc}</p>
                 </div>
-                <strong>{item.price} <small>EGP</small></strong>
+                <strong>{item.price} <small>{isArabic ? "ج.م" : "EGP"}</small></strong>
               </div>
             </Reveal>
           ))}
@@ -66,7 +66,7 @@ export default function MenuPage() {
       </section>
 
       <section className="menu-note">
-        <div><span className="eyebrow">JUST ASK</span><h2>{isArabic ? "على مزاجك." : "Make it yours."}</h2></div>
+        <div><span className="eyebrow">{isArabic ? "قول لنا" : "JUST ASK"}</span><h2>{isArabic ? "على مزاجك." : "Make it yours."}</h2></div>
         <p>{isArabic ? "عايز لبن نباتي؟ سكر أقل؟ عندك حساسية؟ قول لنا عادي. إحنا هنا عشانك." : "Want oat milk instead? Less sugar? Allergic to something? Just tell us. That's literally our job."}</p>
         <ArrowUpRight size={42} aria-hidden="true" />
       </section>

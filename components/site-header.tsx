@@ -22,12 +22,12 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="nav-shell">
-        <Link href="/" className="brand-link" aria-label="Drink Run home" onClick={() => setOpen(false)}>
+        <Link href="/" className="brand-link" aria-label={isArabic ? "درينك رن الرئيسية" : "Drink Run home"} onClick={() => setOpen(false)}>
           <LogoMark compact />
           <span>DRINK RUN</span>
         </Link>
 
-        <nav id="mobile-navigation" className={`main-nav ${open ? "is-open" : ""}`} aria-label="Main navigation">
+        <nav id="mobile-navigation" className={`main-nav ${open ? "is-open" : ""}`} aria-label={isArabic ? "القائمة الرئيسية" : "Main navigation"}>
           {links.map((link) => (
             <Link
               key={link.href}
@@ -44,7 +44,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="nav-actions">
-          <button className="language-button" type="button" onClick={toggleLanguage} aria-label="Switch language">
+          <button className="language-button" type="button" onClick={toggleLanguage} aria-label={isArabic ? "تغيير اللغة إلى الإنجليزية" : "Switch language to Arabic"}>
             {isArabic ? "EN" : "عربي"}
           </button>
           <button
@@ -52,7 +52,7 @@ export function SiteHeader() {
             type="button"
             aria-expanded={open}
             aria-controls="mobile-navigation"
-            aria-label={open ? "Close menu" : "Open menu"}
+            aria-label={open ? (isArabic ? "إغلاق القائمة" : "Close menu") : (isArabic ? "فتح القائمة" : "Open menu")}
             onClick={() => setOpen((current) => !current)}
           >
             {open ? <X size={24} /> : <List size={24} />}

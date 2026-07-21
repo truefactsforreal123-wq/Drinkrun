@@ -19,7 +19,7 @@ export function SiteFooter() {
           <Link href="/menu">{isArabic ? "تصفح القائمة" : "Browse the menu"}</Link>
           <Link href="/branches"><MapPin size={18} /> {isArabic ? "اعثر على أقرب فرع" : "Find a branch"}</Link>
           <a href="tel:+201000000000"><Phone size={18} /> +20 100 000 0000</a>
-          <a href="#" aria-label="Drink Run on Instagram"><InstagramLogo size={20} /> Instagram</a>
+          <a href="#" aria-label={isArabic ? "درينك رن على إنستجرام" : "Drink Run on Instagram"}><InstagramLogo size={20} /> Instagram</a>
         </div>
       </div>
       <div className="footer-bottom">
