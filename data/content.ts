@@ -1,0 +1,60 @@
+export const menuCategories = [
+  { id: "all", en: "All day", ar: "الكل" },
+  { id: "signatures", en: "Signatures", ar: "المشروبات المميزة" },
+  { id: "refreshers", en: "Refreshers", ar: "المنعشات" },
+  { id: "coffee", en: "Coffee", ar: "القهوة" },
+  { id: "bites", en: "Small bites", ar: "وجبات خفيفة" },
+];
+
+export const menuItems = [
+  { id: 1, category: "signatures", kind: "berry" as const, name: "Berry Sunset", nameAr: "غروب التوت", desc: "Hibiscus, strawberry, lime & bubbles", descAr: "كركديه، فراولة، ليمون وصودا", price: 125, tag: "House favorite" },
+  { id: 2, category: "signatures", kind: "mango" as const, name: "Golden Hour", nameAr: "الساعة الذهبية", desc: "Mango, passionfruit, coconut & citrus", descAr: "مانجو، باشن فروت، جوز هند وحمضيات", price: 135, tag: "Sunshine in a cup" },
+  { id: 3, category: "refreshers", kind: "mojito" as const, name: "Garden Fizz", nameAr: "فوار الحديقة", desc: "Cucumber, mint, green apple & soda", descAr: "خيار، نعناع، تفاح أخضر وصودا", price: 110, tag: "Fresh pick" },
+  { id: 4, category: "refreshers", kind: "citrus" as const, name: "Pink Lemonade", nameAr: "ليمونادة وردية", desc: "Pink grapefruit, lemon & orange blossom", descAr: "جريب فروت وردي، ليمون وماء زهر", price: 105, tag: "Bright & zesty" },
+  { id: 5, category: "coffee", kind: "coffee" as const, name: "Cloud Cold Brew", nameAr: "كولد برو كلاود", desc: "Slow brew, vanilla cloud & sea salt", descAr: "قهوة باردة، فانيليا ولمسة ملح بحري", price: 120, tag: "Smooth energy" },
+  { id: 6, category: "coffee", kind: "matcha" as const, name: "Matcha Coast", nameAr: "ماتشا الساحل", desc: "Ceremonial matcha, oat milk & honey", descAr: "ماتشا، حليب شوفان وعسل", price: 130, tag: "Calm & creamy" },
+  { id: 7, category: "bites", kind: "mango" as const, name: "Sunny Toast", nameAr: "توست صني", desc: "Whipped labneh, peach, honey & thyme", descAr: "لبنة مخفوقة، خوخ، عسل وزعتر", price: 145, tag: "Sweet & savory" },
+  { id: 8, category: "bites", kind: "berry" as const, name: "Berry Bowl", nameAr: "بول التوت", desc: "Yogurt, seasonal berries, granola & dates", descAr: "زبادي، توت موسمي، جرانولا وتمر", price: 155, tag: "Feel-good fuel" },
+];
+
+export const branches = [
+  {
+    id: "01",
+    name: "Seaside Walk",
+    nameAr: "ممشى البحر",
+    area: "New Cairo",
+    areaAr: "القاهرة الجديدة",
+    address: "18 Palm Avenue, beside the lake",
+    addressAr: "18 شارع النخيل، بجوار البحيرة",
+    hours: "Daily · 8 AM — 12 AM",
+    hoursAr: "يومياً · 8 ص — 12 ص",
+    phone: "+20 100 000 0018",
+    color: "coral",
+  },
+  {
+    id: "02",
+    name: "The Boardwalk",
+    nameAr: "البوردووك",
+    area: "North Coast",
+    areaAr: "الساحل الشمالي",
+    address: "Marina promenade, Gate 4",
+    addressAr: "ممشى المارينا، بوابة 4",
+    hours: "Daily · 10 AM — 2 AM",
+    hoursAr: "يومياً · 10 ص — 2 ص",
+    phone: "+20 100 000 0042",
+    color: "mint",
+  },
+  {
+    id: "03",
+    name: "City Garden",
+    nameAr: "حديقة المدينة",
+    area: "Sheikh Zayed",
+    areaAr: "الشيخ زايد",
+    address: "7 Green Square, District 5",
+    addressAr: "7 جرين سكوير، الحي الخامس",
+    hours: "Daily · 8 AM — 1 AM",
+    hoursAr: "يومياً · 8 ص — 1 ص",
+    phone: "+20 100 000 0077",
+    color: "plum",
+  },
+];
