@@ -13,7 +13,7 @@ export function SiteFooter() {
         <div className="footer-title">
           <span className="eyebrow">DRINK RUN</span>
           <h2>{isArabic ? "نشوفك عند الغروب؟" : "See you at sunset?"}</h2>
-          <p>{isArabic ? "مشروبات منعشة، ناس رايقة، وأيام تستاهل." : "Good drinks, good people, days worth slowing down for."}</p>
+          <p>{isArabic ? "مشروبات حلوة، ناس رايقة، وأيام تستاهل." : "Good drinks, good people, days worth slowing down for."}</p>
         </div>
         <div className="footer-links">
           <Link href="/menu">{isArabic ? "تصفح القائمة" : "Browse the menu"}</Link>

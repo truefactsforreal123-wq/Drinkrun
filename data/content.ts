@@ -1,20 +1,20 @@
 export const menuCategories = [
   { id: "all", en: "Everything", ar: "كل حاجة" },
   { id: "signatures", en: "Our signatures", ar: "المشروبات المميزة" },
-  { id: "refreshers", en: "Refreshers", ar: "المنعشات" },
+  { id: "refreshers", en: "Refreshers", ar: "منعشات" },
   { id: "coffee", en: "Coffee", ar: "القهوة" },
   { id: "bites", en: "Food", ar: "أكل" },
 ];
 
 export const menuItems = [
-  { id: 1, category: "signatures", kind: "berry" as const, name: "Berry Sunset", nameAr: "غروب التوت", desc: "Hibiscus, strawberry, lime, topped with soda", descAr: "كركديه، فراولة، ليمون وصودا", price: 125, tag: "أكتر حاجة بتتطلب — our most ordered" },
-  { id: 2, category: "signatures", kind: "mango" as const, name: "Golden Hour", nameAr: "الساعة الذهبية", desc: "Mango, passionfruit, coconut, splash of citrus", descAr: "مانجو، باشن فروت، جوز هند وحمضيات", price: 135, tag: "Tastes like summer" },
-  { id: 3, category: "refreshers", kind: "mojito" as const, name: "Garden Fizz", nameAr: "فوار الحديقة", desc: "Cucumber, mint, green apple, soda. That's it.", descAr: "خيار، نعناع، تفاح أخضر وصودا", price: 110, tag: "People love this one" },
-  { id: 4, category: "refreshers", kind: "citrus" as const, name: "Pink Lemonade", nameAr: "ليمونادة وردية", desc: "Pink grapefruit, lemon, orange blossom. Tart and sweet.", descAr: "جريب فروت وردي، ليمون وماء زهر", price: 105, tag: "Not your average lemonade" },
-  { id: 5, category: "coffee", kind: "coffee" as const, name: "Cloud Cold Brew", nameAr: "كولد برو كلاود", desc: "12-hour cold brew, vanilla cream, pinch of sea salt", descAr: "قهوة باردة ١٢ ساعة، كريمة فانيليا ورشة ملح بحري", price: 120, tag: "Smooth as it sounds" },
-  { id: 6, category: "coffee", kind: "matcha" as const, name: "Matcha Coast", nameAr: "ماتشا الساحل", desc: "Proper matcha, oat milk, just a little honey", descAr: "ماتشا حقيقية، حليب شوفان، شوية عسل", price: 130, tag: "Calm in a cup" },
-  { id: 7, category: "bites", kind: "mango" as const, name: "Sunny Toast", nameAr: "توست صني", desc: "Toasted sourdough, whipped labneh, peach, honey, thyme", descAr: "توست عيش بلدي، لبنة، خوخ، عسل وزعتر", price: 145, tag: "Sweet meets savory" },
-  { id: 8, category: "bites", kind: "berry" as const, name: "Berry Bowl", nameAr: "بول التوت", desc: "Thick yogurt, whatever berries are good today, granola, dates", descAr: "زبادي، توت موسمي، جرانولا وتمر", price: 155, tag: "Actually filling" },
+  { id: 1, category: "signatures", kind: "berry" as const, name: "Berry Sunset", nameAr: "غروب التوت", desc: "Hibiscus, strawberry, lime, topped with soda", descAr: "كركديه، فراولة، ليمون، وصودا على الوش", price: 125, tag: "أكتر حاجة بتتطلب" },
+  { id: 2, category: "signatures", kind: "mango" as const, name: "Golden Hour", nameAr: "الساعة الذهبية", desc: "Mango, passionfruit, coconut, splash of citrus", descAr: "مانجو، باشن فروت، جوز هند، وشوية حمضيات", price: 135, tag: "طعم الصيف" },
+  { id: 3, category: "refreshers", kind: "mojito" as const, name: "Garden Fizz", nameAr: "فوار الحديقة", desc: "Cucumber, mint, green apple, soda. That's it.", descAr: "خيار، نعناع، تفاح أخضر، وصودا. بس كده.", price: 110, tag: "الناس بتحبه أوي" },
+  { id: 4, category: "refreshers", kind: "citrus" as const, name: "Pink Lemonade", nameAr: "ليمونادة وردية", desc: "Pink grapefruit, lemon, orange blossom. Tart and sweet.", descAr: "جريب فروت وردي، ليمون، وماء زهر. حامض وحلو.", price: 105, tag: "مش الليمونادة العادية" },
+  { id: 5, category: "coffee", kind: "coffee" as const, name: "Cloud Cold Brew", nameAr: "كولد برو كلاود", desc: "12-hour cold brew, vanilla cream, pinch of sea salt", descAr: "قهوة باردة ١٢ ساعة، كريمة فانيليا، رشة ملح بحري", price: 120, tag: "ناعم زي ما تتخيل" },
+  { id: 6, category: "coffee", kind: "matcha" as const, name: "Matcha Coast", nameAr: "ماتشا الساحل", desc: "Proper matcha, oat milk, just a little honey", descAr: "ماتشا بجد، حليب شوفان، شوية عسل صغيرين", price: 130, tag: "هدوء في كوباية" },
+  { id: 7, category: "bites", kind: "mango" as const, name: "Sunny Toast", nameAr: "توست صني", desc: "Toasted sourdough, whipped labneh, peach, honey, thyme", descAr: "توست بلدي محمص، لبنة، خوخ، عسل، وزعتر", price: 145, tag: "حلو وحادق مع بعض" },
+  { id: 8, category: "bites", kind: "berry" as const, name: "Berry Bowl", nameAr: "بول التوت", desc: "Thick yogurt, whatever berries are good today, granola, dates", descAr: "زبادي تقيل، توت الموسم، جرانولا، وتمر", price: 155, tag: "ده بيملي البطن" },
 ];
 
 export const branches = [
@@ -25,7 +25,7 @@ export const branches = [
     area: "New Cairo",
     areaAr: "القاهرة الجديدة",
     address: "18 Palm Avenue, right next to the lake",
-    addressAr: "١٨ شارع النخيل، جنب البحيرة على طول",
+    addressAr: "١٨ شارع النخيل، جنب البحيرة",
     hours: "Every day · 8 AM to midnight",
     hoursAr: "كل يوم · ٨ الصبح لـ ١٢ بليل",
     phone: "+20 100 000 0018",
@@ -38,7 +38,7 @@ export const branches = [
     area: "North Coast",
     areaAr: "الساحل الشمالي",
     address: "Marina promenade, Gate 4 entrance",
-    addressAr: "ممشى المارينا، مدخل بوابة ٤",
+    addressAr: "ممشى المارينا، بوابة ٤",
     hours: "Every day · 10 AM to 2 AM",
     hoursAr: "كل يوم · ١٠ الصبح لـ ٢ بليل",
     phone: "+20 100 000 0042",

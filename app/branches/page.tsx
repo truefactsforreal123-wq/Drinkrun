@@ -12,11 +12,11 @@ export default function BranchesPage() {
     <main id="main-content">
       <PageHero
         eyebrow="COME SAY HI"
-        eyebrowAr="تعالى سلم"
+        eyebrowAr="تعالى سلم علينا"
         title="We've got a seat for you."
-        titleAr="لك مكان مستني."
+        titleAr="الكرسي مستنيك."
         copy="Three spots around town. All the same good stuff, just different views."
-        copyAr="تلت فروع حوالين البلد. نفس المشروبات الحلوة، كل فرع بشخصيته."
+        copyAr="تلت فروع. نفس المشروبات. كل واحد بشخصيته."
       >
         <div className="branch-hero-map" aria-hidden="true">
           <span className="map-line map-line--one" />
@@ -61,8 +61,8 @@ export default function BranchesPage() {
         </div>
         <Reveal className="map-copy">
           <span className="eyebrow">YOUR LOCAL</span>
-          <h2>{isArabic ? "نفس المزاج الحلو، في كل مكان." : "Same vibe, different neighborhood."}</h2>
-          <p>{isArabic ? "كل فرع مختلف شوية — في الديكور، في الطلة — بس المشروبات الطازة والناس اللي بترحب بيك هتلاقيهم في أي فرع تروحه." : "Each branch has its own look and feel, but the fresh drinks and the people who actually care — that stuff travels."}</p>
+          <h2>{isArabic ? "نفس المزاج الحلو في كل حتة." : "Same vibe, different neighborhood."}</h2>
+          <p>{isArabic ? "كل فرع مختلف شوية — في الديكور، في الطلة — لكن المشروبات الطازة والناس اللي بترحب بيك هتلاقيهم في أي مكان تروحه." : "Each branch has its own look and feel, but the fresh drinks and the people who actually care — that stuff travels."}</p>
         </Reveal>
       </section>
     </main>

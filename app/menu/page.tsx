@@ -18,11 +18,11 @@ export default function MenuPage() {
     <main id="main-content">
       <PageHero
         eyebrow="WHAT WE MAKE"
-        eyebrowAr="اللي بنعمله"
+        eyebrowAr="اللي عندنا"
         title="Take your pick."
-        titleAr="اختار اللي يعجبك."
+        titleAr="اختار براحتك."
         copy="Fresh drinks, proper coffee, and a few things to eat. All made right here."
-        copyAr="مشروبات طازة، قهوة مضبوطة، وحاجات بسيطة للأكل. كل حاجة بتتعمل عندنا."
+        copyAr="مشروبات طازة، قهوة مظبوطة، وحاجات بسيطة للأكل. كلها بتتعمل هنا."
       >
         <div className="menu-hero-art" aria-hidden="true">
           <DrinkArt kind="mango" />
@@ -66,8 +66,8 @@ export default function MenuPage() {
       </section>
 
       <section className="menu-note">
-        <div><span className="eyebrow">JUST ASK</span><h2>{isArabic ? "خلّيه على مزاجك." : "Make it yours."}</h2></div>
-        <p>{isArabic ? "عايز حليب نباتي؟ سكر أقل؟ عندك حساسية من حاجة؟ قول لنا ونتصرف. إحنا هنا عشان نخدمك." : "Want oat milk instead? Less sugar? Allergic to something? Just tell us. That's literally our job."}</p>
+        <div><span className="eyebrow">JUST ASK</span><h2>{isArabic ? "على مزاجك." : "Make it yours."}</h2></div>
+        <p>{isArabic ? "عايز لبن نباتي؟ سكر أقل؟ عندك حساسية؟ قول لنا عادي. إحنا هنا عشانك." : "Want oat milk instead? Less sugar? Allergic to something? Just tell us. That's literally our job."}</p>
         <ArrowUpRight size={42} aria-hidden="true" />
       </section>
     </main>
